@@ -85,6 +85,9 @@ int grouper_ti_regulator_init(void);
 int grouper_ti_suspend_init(void);
 int grouper_ti_edp_init(void);
 
+struct platform_device *tegra_usb_hsic_host_register(void);
+void tegra_usb_hsic_host_unregister(struct platform_device *pdev);
+
 void __init grouper_tsensor_init(void);
 int __init touch_init_raydium(int irq_gpio, int reset_gpio, int platform);
 int __init touch_init_synaptics_grouper(void);

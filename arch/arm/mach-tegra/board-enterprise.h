@@ -54,6 +54,9 @@ int enterprise_suspend_init(void);
 int enterprise_edp_init(void);
 void enterprise_bpc_mgmt_init(void);
 
+struct platform_device *tegra_usb_hsic_host_register(void);
+void tegra_usb_hsic_host_unregister(struct platform_device *pdev);
+
 /* Invensense MPU Definitions */
 #define MPU_TYPE_MPU3050	1
 #define MPU_TYPE_MPU6050	2
